@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}Aloqa | MEXYOR GENERAL KAPLAZI{% endblock %}
+
+{% block content %}
+<section class="section contact" id="aloqa">
+    <div class="section-title">
+        <h2>Aloqa</h2>
+        <p>Biz bilan bog'laning va loyihangiz haqida maslahat oling</p>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3>Bizning Manzil</h3>
+            <div class="contact-details">
+                <p><i class="fas fa-map-marker-alt"></i> Toshkent viloyati, Piskent tumani</p>
+                <p><i class="fas fa-phone"></i> +998 93 727 89 51</p>
+                <p><i class="fas fa-envelope"></i> info@mexyor.uz</p>
+                <p><i class="fas fa-clock"></i> Dushanba - Juma: 9:00 - 18:00</p>
+            </div>
+
+            <h3>Ijtimoiy Tarmoqlar</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://t.me/Team10Player1" class="social-icon"><i class="fab fa-telegram"></i></a>
+                <a href="https://www.instagram.com/shohjahonhacker8" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert {% if message.tags == 'success' %}alert-success{% else %}alert-danger{% endif %}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+
+            <form method="POST" class="form-group">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn">Xabarni Yuborish</button>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

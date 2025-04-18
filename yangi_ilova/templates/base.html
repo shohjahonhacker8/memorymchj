@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}MEXYOR | GENERAL KAPLAZI - Qurilish va Rekonstruksiya{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> +998 93 727 89 51</p>
+                <p><i class="fas fa-clock"></i> 9:00 - 23:00</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="MEXYOR Logo">
+                <div class="logo-text">
+                    <h1>MEYOR</h1>
+                    <p>GENERAL KAPLAZI</p>
+                </div>
+            </div>
+
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul>
+                    <li><a href="#" class="">Asosiy</a></li>
+                    <li><a href="#biz_haqimizda">Biz haqimizda</a></li>
+                    <li><a href="#xizmatlar">Xizmatlar</a></li>
+                    <li><a href="#loyihalar">Loyihalar</a></li>
+                    <li><a href="#yangiliklar">Yangiliklar</a></li>
+                    <li><a href="#aloqa">Aloqa</a></li>
+                    <div class="language-selector col-md-4">
+                        <select id="inputState" class="form-select">
+                          <option selected>Uzbek</option>
+                          <option>Russian</option>
+                        </select>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>MEXYOR</h3>
+                <p>GENERAL KAPLAZI - Toshkent viloyatidagi yetakchi qurilish kompaniyasi</p>
+                <p>Biz yuqori sifatli qurilish va rekonstruksiya ishlarini amalga oshiramiz.</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Tezkor Havolalar</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Asosiy</a></li>
+                    <li><a href="#">Biz haqimizda</a></li>
+                    <li><a href="#">Xizmatlar</a></li>
+                    <li><a href="#">Loyihalar</a></li>
+                    <li><a href="#">Aloqa</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col" id="xizmatlar">
+                <h3>Xizmatlar</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Qurilish ishlari</a></li>
+                    <li><a href="#">Rekonstruksiya</a></li>
+                    <li><a href="#">Infratuzilma</a></li>
+                    <li><a href="#">Loyihalash</a></li>
+                    <li><a href="#">Texnik nazorat</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Aloqa</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Toshkent viloyati, Piskent tumani</p>
+                <p><i class="fas fa-phone"></i> +998 93 727 89 51</p>
+                <p><i class="fas fa-envelope"></i> info@mexyor.uz</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2023 MEXYOR GENERAL KAPLAZI. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>
