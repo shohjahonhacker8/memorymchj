@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/yangi_config.iml" filepath="$PROJECT_DIR$/.idea/yangi_config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/memorymchj.iml" filepath="$PROJECT_DIR$/.idea/memorymchj.iml" />
     </modules>
   </component>
 </project>
